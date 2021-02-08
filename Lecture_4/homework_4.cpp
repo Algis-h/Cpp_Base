@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int main()
 {
@@ -26,7 +27,7 @@ int main()
 
 	if (d > 1)
 	{
-		for (int i = 2; i < d; ++i)
+		for (int i = 2; i <= sqrt(d); i++)
 		{
 			if (d % i == 0)
 			{
@@ -53,7 +54,7 @@ int main()
 	}
 	std::cout << flag_3 << std::endl;
 
-	//Task 4
+	// Task 4
 
 	int year;
 	std::cout << "Введите год:" << std::endl;
